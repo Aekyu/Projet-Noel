@@ -2,13 +2,13 @@
 BackLog du sapin de Noel
 
 - c'est un site pour distribuer les cadeaux au hasard, ce site est responsive
-    - preparer le repository GIT
+    - preparer le repository GIT //Baptiste//
     - preparer le serveur
 
 - chaque participant doit s'inscrire
     - un formulaire     (1jours)
     - une DB             (1/2 jours)
-    //- compatible RGPD    ( )
+    - compatible RGPD    ( )
 
 - un participant = un cadeau
 
