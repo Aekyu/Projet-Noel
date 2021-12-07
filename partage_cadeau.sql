@@ -1,9 +1,4 @@
-CREATE TABLE partage_cadeau
-(
-    id_donneur INT,
-    id_receveur INT
-);
-//clien
+create database projet_noel;
 
 drop table if exists donneur;
 create table donneur (
@@ -24,29 +19,3 @@ insert into donneur ( nom ) values
 ("Nelly"       ),
 ("Xavier"      )
 ;
-//test pour voir si il en prend un au hazar 
-SELECT * FROM donneur ORDER BY RAND() LIMIT 1;
-//
-
-
-select 
-    donneur.nom
-from
-    donneur
-ORDER BY RAND() 
-;
-
-
-//
-
-select 
-    donneur.nom
-from
-    donneur,
-    (select 
-    donneur.nom
-from
-    donneur
-ORDER BY RAND())
-as emp
-
