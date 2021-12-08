@@ -42,7 +42,7 @@ function entete( $titre_page )
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>$titre_page</title>
-        <link rel="stylesheet" href="style_inscription.css">
+        <link rel="stylesheet" href="style_formulaire_inscription.css">
         <script type="text/javascript" src="fonctions.js"></script>
     </head>
     <body>
