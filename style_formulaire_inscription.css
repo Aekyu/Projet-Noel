@@ -1,3 +1,9 @@
+body
+{
+    background-image: url(./images/wepik-2021118-113829.png);
+}
+
+
 .styleFondPage
 {
 
@@ -10,7 +16,7 @@ position: relative;
 width: 359px;
 height: 493px;
 
-background-image: url(./images/wepik-2021118-113829.png);
+
 
 }
 
@@ -56,4 +62,15 @@ flex: none;
 order: 2;
 flex-grow: 0;
 margin: 29px 0px;
+}
+
+.styleBouton
+{
+
+}
+
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
 }
