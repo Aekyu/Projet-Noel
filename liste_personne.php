@@ -15,5 +15,4 @@ if($total > 0) {
     }
 }
 echo json_encode($tableau_non_melanger);
-
 ?>
