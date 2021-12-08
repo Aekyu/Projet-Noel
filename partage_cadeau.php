@@ -50,8 +50,6 @@ while ( count( $tableau_melanger ) )
         shuffle($tableau_melanger);
     }
     print("$tableau_melanger[0] donne a $tableau_non_melanger[0]<br>");
-    //unset($tableau_non_melanger[0]);
-    //unset($tableau_melanger[0]);
     array_shift($tableau_non_melanger);
     array_shift($tableau_melanger);
 }
