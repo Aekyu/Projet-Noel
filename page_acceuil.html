@@ -23,6 +23,19 @@
 			<div class="snowflake">❄</div>
 		</div>
 
+		<div id="hiddenContent" style="color: transparent">
+			<div class="d-flex justify-content-center mt-5">
+				<h1><span id="showTimer"></span></h1>
+			</div>
+			<div>
+				<h3 class="text-center mt-3">Restant avant l'ouverture</h3>
+			</div>
+		</div>
+
+		<div class="d-flex justify-content-center">
+			<button class="btn btn-danger mt-5" onclick="hiddenFunction()">Temps restant</button>
+		</div>
+
 		<script>
 			fetch("./liste_personne.php")
 				.then(function (result) {
@@ -36,6 +49,35 @@
 				.catch(function (error) {
 					console.log(error);
 				});
+
+			function hiddenFunction() {
+				let hiddenContent = document.getElementById("hiddenContent");
+				if (hiddenContent.style.color === "transparent") {
+					hiddenContent.style.color = "black";
+				} else {
+					hiddenContent.style.color = "transparent";
+				}
+			}
+
+			let dateTarget = new Date("Dec 17, 2021 10:00:00").getTime();
+			let x = setInterval(function () {
+				let actualDate = new Date().getTime();
+				let distance = dateTarget - actualDate;
+				console.log(dateTarget);
+				console.log(actualDate);
+				console.log(distance);
+				let days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				let seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+				document.getElementById("showTimer").innerHTML = days + "j " + hours + "h " + minutes + "m " + seconds + "s ";
+
+				if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("showTimer").innerHTML = "Ouvrez vos cadeaux !!!";
+				}
+			}, 1000);
 
 			//
 		</script>
