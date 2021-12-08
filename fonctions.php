@@ -1,5 +1,24 @@
 <?php
 require_once "ressources.php";
+
+function entete( $titre_page )
+{
+    $var = <<<TOTO123
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>$titre_page</title>
+        <link rel="stylesheet" href="style_formulaire_inscription.css">
+        <script type="text/javascript" src="fonctions.js"></script>
+    </head>
+    <body>
+    TOTO123;
+    print( $var );
+}
+
 /*
 function query( $q )
 {
@@ -32,22 +51,6 @@ function comboBox(  $table, $query="", $visibleAdd=1  )
         print( "<div class='buttonCombo' onclick=\"addItem( '$table', 'ajout $table' )\" >+</div>\n");
 }
 */
-function entete( $titre_page )
-{
-    $var = <<<TOTO123
-    <!DOCTYPE html>
-    <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>$titre_page</title>
-        <link rel="stylesheet" href="style_formulaire_inscription.css">
-        <script type="text/javascript" src="fonctions.js"></script>
-    </head>
-    <body>
-    TOTO123;
-    print( $var );
-}
+
 
 ?>

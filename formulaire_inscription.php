@@ -19,7 +19,7 @@
         $mysqli->close();
     }
 ?>
-
+<img src="./images/wepik-2021118-113829.png" class="responsive" width="600" height="400">
 <form class="styleFondPage" action="#" method="POST">
     <input class="user" type="text" name='pseudo' placeholder="Entrez votre pseudo">
     <br>
