@@ -1,59 +1,58 @@
-
 * {
-    margin: 0px;
-    padding: 0px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-  background: #f63033;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	background: #f63033;
 }
 
 #flyWindow {
-    position: absolute;
-    width: 550px;
-    height: 325px;
-    background-color: lightgrey;
-    top: 150px;
-    border-radius: 3px;
-    box-shadow: 10px 5px 5px rgb(92, 92, 92);
+	position: absolute;
+	width: 550px;
+	height: 325px;
+	background-color: lightgrey;
+	top: 150px;
+	border-radius: 3px;
+	box-shadow: 10px 5px 5px rgb(92, 92, 92);
 }
 
 #loginContent {
-    margin-top: 40px;
-    text-align: center;
+	margin-top: 40px;
+	text-align: center;
 }
 
 #Name {
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 450px;
-    text-align: center;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 450px;
+	text-align: center;
 }
 
 #loginBtnDiv {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    text-align: center;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	text-align: center;
 }
 
 #errorName {
-    display: flex;
-    justify-content: center;
-
+	display: flex;
+	justify-content: center;
+}
 /* customizable snowflake styling */
 .snowflake {
 	color: #fff;
@@ -185,4 +184,8 @@ body {
 .demo a {
 	font-family: "Raleway", sans-serif;
 	color: #000;
+}
+
+#flyWindow {
+	margin-top: 150px;
 }
