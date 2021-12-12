@@ -6,7 +6,7 @@ require_once "ressources.php";
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
@@ -19,26 +19,30 @@ require_once "ressources.php";
 
 <body class="container">
   <div class="container">
+    <div>
+      <h3 class="text-center mt-3 text-light">Temps restant avant l'ouverture</h3>
+    </div>
     <div id="hiddenContent">
-      <div class="d-flex justify-content-center mt-5">
+      <div class="d-flex justify-content-center text-light">
         <h1><span id="showTimer"></span></h1>
       </div>
-      <div>
-        <h3 class="text-center mt-3">Temps restant avant l'ouverture</h3>
-      </div>
     </div>
-    <div class="d-flex justify-content-center" id="fly">
-      <div id="flyWindow" class="d-flex align-items-center">
-        <div>
-          <h1 id=" loginContent" class="text-center pb-3">Inscrivez-vous</h1>
-          <form class="styleFondPage" action="#" method="POST">
+    <form class="styleFondPage" action="#" method="POST">
+      <div class="d-flex justify-content-center mt-5" id="fly">
+        <div id="flyWindow" class="d-flex align-items-center justify-content-center">
+          <div class=" w-100">
+            <h1 id=" loginContent" class="text-center mb-4">Inscrivez-vous</h1>
             <div class="d-flex justify-content-center">
               <input class="user form-control w-75" type="text" name='pseudo' placeholder="Entrez votre pseudo">
             </div>
-            <div class="d-flex justify-content-around mt-4">
-              <a href="./index.php"><span type="submit" class="btn btn-secondary">Retour</span></a>
-              <button class="styleBouton btn btn-secondary" type="submit">Valider</button>
+            <div class="d-flex justify-content-center">
+              <div class="d-flex justify-content-end w-75 mt-2">
+                <!-- <a href="./index.php"><span type="submit" class="btn btn-secondary">Retour</span></a> -->
+                <button class="styleBouton btn btn-secondary" type="submit">Valider</button>
+              </div>
             </div>
+
+
             <?php
             if ($_POST) {
               $pseudo = $_POST['pseudo'];
@@ -53,12 +57,20 @@ require_once "ressources.php";
               $mysqli->close();
             }
             ?>
-          </form>
+            <div class="d-flex justify-content-center pt-3">
+              <div class=" w-75">
+                <div class="d-flex align-items-end justify-content-end ">
+                  <p class="mb-0 mx-2">Déjà inscrit ? <a href="page_principale.php">Cliquez ici</a> </p>
+                  <!-- <button class="styleBouton btn btn-secondary" type="submit">Connexion</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+    </form>
+  </div>
 
-    <!-- <div class="d-flex justify-content-center">
+  <!-- <div class="d-flex justify-content-center">
       <button class="btn btn-success mt-5" onclick="hiddenFunction()">
         Temps restant
       </button>

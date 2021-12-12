@@ -5,9 +5,21 @@
   box-sizing: border-box;
 }
 
+
+html,
+  body {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    height: 100% !important;
+    max-height: none !important;
+    overflow: hidden !important;
+    overflow-x: hidden !important;
+    margin: 0px;
+  }
+
 body {
   position: relative;
-
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,20 +29,22 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #f63033;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-color: #d4418e;
+  background-image: linear-gradient(330deg, #d4418e 5%, #043f99 70%);
+
 }
 
-#fly{
+#timer{
   position: absolute;
-  top:50%;
+  top: 15%;
 }
 
 #flyWindow { 
-  /* position: absolute; */
   width: 550px;
   height: 325px;
   background-color: lightgrey;
-  /* top: 250px; */
   border-radius: 3px;
   box-shadow: 10px 5px 5px rgb(92, 92, 92);
 }
@@ -191,3 +205,45 @@ body {
   font-family: "Raleway", sans-serif;
   color: #000;
 }
+
+#pannel{
+  position:absolute;
+  bottom: 4%;
+  width:8%;
+  right: 53%;
+  z-index: 1;
+}
+
+#tree{
+  position: absolute;
+  bottom: 9%;
+  right: 65%;
+  height: 350px;
+  z-index: 1;
+}
+
+#fond{
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+#tas{
+  color: black;
+  text-decoration: none;
+  position: absolute;
+  bottom: 149px;
+  right: 834px;
+  width: 97px;
+  background:transparent;
+  z-index: 2;
+}
+
+#retourInscription{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+
