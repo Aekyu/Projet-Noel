@@ -24,10 +24,8 @@
         <div>
             <h3 class="text-center mt-3 text-light">Temps restant avant l'ouverture</h3>
         </div>
-        <div id="hiddenContent">
-            <div class="d-flex justify-content-center text-light">
-                <h1><span id="showTimer"></span></h1>
-            </div>
+        <div id="timer3" class="d-flex justify-content-center">
+            <div class="d-flex text-light " id="showTimer"></div>
         </div>
     </div>
 
@@ -50,11 +48,15 @@
                 S'inscrire</button></a>
     </div>
 
+
+    </div>
+
+
     <div>
         <a id="tas" href="page_tas.php">Tirage au sort</a>
     </div>
     <script>
-        let dateTarget = new Date("Dec 17, 2021 10:00:00").getTime();
+        let dateTarget = new Date("Dec 16, 2021 10:00:00").getTime();
         let x = setInterval(function() {
             let actualDate = new Date().getTime();
             let distance = dateTarget - actualDate;
@@ -65,8 +67,7 @@
             let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            document.getElementById("showTimer").innerHTML =
-                days + "j " + hours + "h " + minutes + "m " + seconds + "s ";
+            document.getElementById("showTimer").innerHTML = `<div class="timer2">${days}<br> jours</div><div class="timer2">${hours}<br> heures</div><div class="timer2">${minutes}<br> minutes</div><div class="timer2">${seconds}<br> secondes</div>`;
 
             if (distance < 0) {
                 clearInterval(x);

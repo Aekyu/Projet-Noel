@@ -18,56 +18,55 @@ require_once "ressources.php";
 </head>
 
 <body class="container">
-  <div class="container">
+  <div id="timer" class="container">
     <div>
       <h3 class="text-center mt-3 text-light">Temps restant avant l'ouverture</h3>
     </div>
-    <div id="hiddenContent">
-      <div class="d-flex justify-content-center text-light">
-        <h1><span id="showTimer"></span></h1>
-      </div>
+    <div id="timer3" class="d-flex justify-content-center">
+      <div class="d-flex text-light " id="showTimer"></div>
     </div>
-    <form class="styleFondPage" action="#" method="POST">
-      <div class="d-flex justify-content-center mt-5" id="fly">
-        <div id="flyWindow" class="d-flex align-items-center justify-content-center">
-          <div class=" w-100">
-            <h1 id=" loginContent" class="text-center mb-4">Inscrivez-vous</h1>
-            <div class="d-flex justify-content-center">
-              <input class="user form-control w-75" type="text" name='pseudo' placeholder="Entrez votre pseudo">
+  </div>
+  <form class="styleFondPage" action="#" method="POST">
+    <div class="d-flex justify-content-center mt-5" id="fly">
+      <div id="flyWindow" class="d-flex align-items-center justify-content-center">
+        <div class=" w-100">
+          <h1 id=" loginContent" class="text-center mb-4">Inscrivez-vous</h1>
+          <div class="d-flex justify-content-center">
+            <input class="user form-control w-75" type="text" name='pseudo' placeholder="Entrez votre pseudo">
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-end w-75 mt-2">
+              <!-- <a href="./index.php"><span type="submit" class="btn btn-secondary">Retour</span></a> -->
+              <button class="styleBouton btn btn-secondary" type="submit">Valider</button>
             </div>
-            <div class="d-flex justify-content-center">
-              <div class="d-flex justify-content-end w-75 mt-2">
-                <!-- <a href="./index.php"><span type="submit" class="btn btn-secondary">Retour</span></a> -->
-                <button class="styleBouton btn btn-secondary" type="submit">Valider</button>
-              </div>
-            </div>
+          </div>
 
 
-            <?php
-            if ($_POST) {
-              $pseudo = $_POST['pseudo'];
+          <?php
+          if ($_POST) {
+            $pseudo = $_POST['pseudo'];
 
-              $mysqli = new mysqli('localhost', 'root', '', 'projet_noel');
+            $mysqli = new mysqli('localhost', 'root', '', 'projet_noel');
 
-              $query  = "insert into donneur ( nom ) values ( '$pseudo' );";
-              if ($mysqli->query($query)) {
-                print('<div class="d-flex justify-content-center text-center"><p class="pt-4 w-75"> Merci ' . $pseudo . ' pour ton inscription !
+            $query  = "insert into donneur ( nom ) values ( '$pseudo' );";
+            if ($mysqli->query($query)) {
+              print('<div class="d-flex justify-content-center text-center"><p class="pt-4 w-75"> Merci ' . $pseudo . ' pour ton inscription !
                 Entres, et tu découvriras à qui tu peux offrir ton cadeau</p></div>');
-              }
-              $mysqli->close();
             }
-            ?>
-            <div class="d-flex justify-content-center pt-3">
-              <div class=" w-75">
-                <div class="d-flex align-items-end justify-content-end ">
-                  <p class="mb-0 mx-2">Déjà inscrit ? <a href="page_principale.php">Cliquez ici</a> </p>
-                  <!-- <button class="styleBouton btn btn-secondary" type="submit">Connexion</button> -->
-                </div>
+            $mysqli->close();
+          }
+          ?>
+          <div class="d-flex justify-content-center pt-2">
+            <div class=" w-75">
+              <div class="d-flex align-items-end justify-content-end ">
+                <p class="mb-0 mx-2">Déjà inscrit ? <a href="page_principale.php">Cliquez ici</a> </p>
+                <!-- <button class="styleBouton btn btn-secondary" type="submit">Connexion</button> -->
               </div>
             </div>
           </div>
         </div>
-    </form>
+      </div>
+  </form>
   </div>
 
   <!-- <div class="d-flex justify-content-center">
@@ -111,7 +110,7 @@ require_once "ressources.php";
     //   }
     // }
 
-    let dateTarget = new Date("Dec 17, 2021 10:00:00").getTime();
+    let dateTarget = new Date("Dec 16, 2021 10:00:00").getTime();
     let x = setInterval(function() {
       let actualDate = new Date().getTime();
       let distance = dateTarget - actualDate;
@@ -125,8 +124,7 @@ require_once "ressources.php";
       let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      document.getElementById("showTimer").innerHTML =
-        days + "j " + hours + "h " + minutes + "m " + seconds + "s ";
+      document.getElementById("showTimer").innerHTML = `<div class="timer2">${days}<br> jours</div><div class="timer2">${hours}<br> heures</div><div class="timer2">${minutes}<br> minutes</div><div class="timer2">${seconds}<br> secondes</div>`;
 
       if (distance < 0) {
         clearInterval(x);
