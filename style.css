@@ -20,18 +20,22 @@ body {
   background: #f63033;
 }
 
-#flyWindow {
+#fly{
   position: absolute;
+  top:50%;
+}
+
+#flyWindow { 
+  /* position: absolute; */
   width: 550px;
   height: 325px;
   background-color: lightgrey;
-  top: 150px;
+  /* top: 250px; */
   border-radius: 3px;
   box-shadow: 10px 5px 5px rgb(92, 92, 92);
 }
 
 #loginContent {
-  margin-top: 40px;
   text-align: center;
 }
 
@@ -186,8 +190,4 @@ body {
 .demo a {
   font-family: "Raleway", sans-serif;
   color: #000;
-}
-
-#flyWindow {
-  margin-top: 150px;
 }

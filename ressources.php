@@ -1,6 +1,5 @@
 <?php
 $servername = "localhost";
-  $username = "alexis.s";
-  $password = "alexis.SQL@011012";
+  $username = "root";
+  $password = "";
   $database = "projet_noel";
-?>
