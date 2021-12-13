@@ -278,6 +278,42 @@ body {
 
 /* END CSS page_principale ( tree/pannel/house/button ) */
 
+/* CSS page_tas */
+
+#font{
+  z-index: -1;
+  /* background: no-repeat url("cadeau.jpg"); */
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+}
+
+#bloc{
+  background-color: rgb(104, 104, 104);
+  padding: 11px;
+  border-radius: 10px;
+  margin-bottom: px;
+}
+
+#donne, #recev{
+  background-color: rgb(104, 104, 104);
+  padding: 11px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+#tas1{
+  background-color: rgb(104, 104, 104);
+  padding: 11px;
+  margin-top: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 68%;
+  right: 46%;
+}
+
 
 
 
