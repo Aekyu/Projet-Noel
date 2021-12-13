@@ -294,7 +294,8 @@ body {
   background-color: rgb(104, 104, 104);
   padding: 11px;
   border-radius: 10px;
-  margin-bottom: px;
+  width: 30%;
+  text-align: center;
 }
 
 #donne, #recev{
@@ -302,6 +303,8 @@ body {
   padding: 11px;
   margin-top: 15px;
   border-radius: 10px;
+  width: 30%;
+  text-align: center;
 }
 
 #tas1{
