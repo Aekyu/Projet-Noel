@@ -68,6 +68,7 @@ while ($tableau_non_melanger[0] === $tableau_melanger[0]) {
                 shuffle($tableau_melanger);
             }
             print("'$tableau_melanger[0]' : '$tableau_non_melanger[0]',\n");
+            
             array_shift($tableau_non_melanger);
             array_shift($tableau_melanger);
         }
