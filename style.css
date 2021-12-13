@@ -5,18 +5,17 @@
   box-sizing: border-box;
 }
 
-
 html,
-  body {
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    height: 100% !important;
-    max-height: none !important;
-    overflow: hidden !important;
-    overflow-x: hidden !important;
-    margin: 0px;
-  }
+body {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  height: 100% !important;
+  max-height: none !important;
+  overflow: hidden !important;
+  overflow-x: hidden !important;
+  margin: 0px;
+}
 
 body {
   position: relative;
@@ -33,7 +32,6 @@ body {
   background-repeat: no-repeat;
   background-color: #d4418e;
   background-image: linear-gradient(330deg, #d4418e 5%, #043f99 70%);
-
 }
 
 /* SNOW ( Baptiste ) */
@@ -172,7 +170,7 @@ body {
 /* END SNOW */
 
 /* COUNTDOWN ( Baptiste ) */
-.timer2{
+.timer2 {
   background: rgba(28, 29, 32, 0.3);
   box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(2px);
@@ -184,7 +182,7 @@ body {
   font-size: 18px;
 }
 
-#timer{
+#timer {
   position: absolute;
   top: 15%;
 }
@@ -193,7 +191,7 @@ body {
 
 /* FORM ( YACINE ) */
 
-#flyWindow { 
+#flyWindow {
   position: absolute;
   bottom: 5em;
   width: 550px;
@@ -231,15 +229,15 @@ body {
 
 /* CSS page_principale ( tree/pannel/house/button ) ( Baptiste ) */
 
-#pannel{
-  position:absolute;
+#pannel {
+  position: absolute;
   bottom: 4%;
-  width:8%;
+  width: 8%;
   right: 50%;
   z-index: 1;
 }
 
-#tree{
+#tree {
   position: absolute;
   bottom: 9%;
   right: 65%;
@@ -247,30 +245,30 @@ body {
   z-index: 1;
 }
 
-#fond{
+#fond {
   position: absolute;
   left: 0px;
   bottom: -2px;
   width: 100%;
 }
 
-#tas{
+#tas {
   color: rgba(250, 0, 0, 0.719);
   text-decoration: none;
   position: absolute;
   bottom: 149px;
   right: 51.2%;
   width: 97px;
-  background:transparent;
+  background: transparent;
   z-index: 2;
 }
 
-#tas:hover{
+#tas:hover {
   -webkit-transform: scale(1.1);
   transition: all 0.4s;
 }
 
-#retourInscription{
+#retourInscription {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -280,43 +278,47 @@ body {
 
 /* CSS page_tas */
 
-#font{
-  z-index: -1;
-  /* background: no-repeat url("cadeau.jpg"); */
+#font {
   position: absolute;
-  width: 100%;
-  top: 0px;
-  left: 0px;
-  height: 100%;
+  z-index: -1;
 }
 
-#bloc{
-  background-color: rgb(104, 104, 104);
-  padding: 11px;
-  border-radius: 10px;
-  width: 30%;
-  text-align: center;
+#bloc,
+#bloc2 {
+  background: rgb(120, 12, 12);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 12, 12, 1) 0%,
+    rgba(157, 59, 59, 0.7987570028011204) 0%,
+    rgba(107, 102, 102, 0.6502976190476191) 35%
+  );
+  /* background-color: #ada7a1; */
+  border-radius: 11px;
 }
 
-#donne, #recev{
-  background-color: rgb(104, 104, 104);
-  padding: 11px;
-  margin-top: 15px;
-  border-radius: 10px;
-  width: 30%;
-  text-align: center;
+#donne,
+#recev {
+  background: rgb(120, 12, 12);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 12, 12, 1) 0%,
+    rgba(157, 59, 59, 0.7987570028011204) 0%,
+    rgba(107, 102, 102, 0.6502976190476191) 35%
+  );
+  border-radius: 11px;
 }
 
-#tas1{
-  background-color: rgb(104, 104, 104);
+#tas1 {
+  background: rgb(120, 12, 12);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 12, 12, 1) 0%,
+    rgba(157, 59, 59, 0.7987570028011204) 0%,
+    rgba(107, 102, 102, 0.6502976190476191) 35%
+  );
   padding: 11px;
   margin-top: 10px;
-  border-radius: 10px;
+  border-radius: 11px;
   position: absolute;
   top: 68%;
-  right: 46%;
 }
-
-
-
-
