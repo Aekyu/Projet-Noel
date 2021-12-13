@@ -27,7 +27,7 @@ if ($_POST) {
     <input class="user" type="text" name='pseudo' placeholder="Entrez votre pseudo">
     <br>
     <button class="styleBouton btn btn-secondary" type="submit">Valider</button>
-    <a href="./index.html"><span type="submit" class="btn btn-secondary">Retour</span></a> 
+    <a href="./index.php"><span type="submit" class="btn btn-secondary">Retour</span></a> 
 </form>
 
 
