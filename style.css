@@ -36,7 +36,7 @@ body {
 
 }
 
-/* SNOW */
+/* SNOW ( Baptiste ) */
 .snowflake {
   /* position: static; */
   color: #fff;
@@ -171,7 +171,7 @@ body {
 }
 /* END SNOW */
 
-/* COUNTDOWN */
+/* COUNTDOWN ( Baptiste ) */
 .timer2{
   background: rgba(28, 29, 32, 0.3);
   box-shadow: 0px 4px 10px 5px rgba(0, 0, 0, 0.2);
@@ -191,7 +191,7 @@ body {
 
 /* END COUNTDOWN */
 
-/* FORM */
+/* FORM ( YACINE ) */
 
 #flyWindow { 
   position: absolute;
@@ -229,7 +229,7 @@ body {
 
 /* END FORM */
 
-/* CSS page_principale ( tree/pannel/house/button ) */
+/* CSS page_principale ( tree/pannel/house/button ) ( Baptiste ) */
 
 #pannel{
   position:absolute;
