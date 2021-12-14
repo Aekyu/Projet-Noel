@@ -1,8 +1,8 @@
 /* Media queries page_princpale ( Baptiste ) */
 
-@media screen and (max-width: 637px){
-    #fond{
-        position: absolute; 
+@media screen and (max-width: 637px) {
+    #fond {
+        position: absolute;
         z-index: -1;
         width: auto;
         left: -450px;
@@ -10,11 +10,11 @@
         /* visibility: hidden; */
     }
 
-    #tree{
+    #tree {
         visibility: hidden;
     }
 
-    #pannel{
+    #pannel {
         position: absolute;
         z-index: 2;
         width: 100px;
@@ -22,31 +22,31 @@
         left: 20px;
     }
 
-    #tas{
+    #tas {
         bottom: 96px;
         left: 22px;
         width: 97px;
         font-size: 14px;
     }
 
-    .timer2{
+    .timer2 {
         margin: 10px;
     }
 
-    #timer3{
-        display:flex;
+    #timer3 {
+        display: flex;
         justify-content: center;
     }
 
-    #showTimer{
+    #showTimer {
         /* padding:10px; */
         transform: scale(0.7);
     }
 }
 
-@media (min-width: 637px) and (max-width: 768px){
-    #fond{
-        position: absolute; 
+@media (min-width: 637px) and (max-width: 768px) {
+    #fond {
+        position: absolute;
         z-index: -1;
         width: auto;
         left: -322px;
@@ -54,11 +54,11 @@
         /* visibility: hidden; */
     }
 
-    #tree{
+    #tree {
         visibility: hidden;
     }
 
-    #pannel{
+    #pannel {
         position: absolute;
         z-index: 2;
         width: 100px;
@@ -66,30 +66,26 @@
         left: 110px;
     }
 
-    #tas{
+    #tas {
         bottom: 96px;
         left: 115px;
         width: 97px;
         font-size: 14px;
     }
 
-    .timer2{
+    .timer2 {
         margin: 10px;
     }
 
-    #timer3{
-        display:flex;
+    #timer3 {
+        display: flex;
         justify-content: center;
-    }
-
-    #showTimer{
-        /* transform: scale(0.7); */
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
-    #fond{
-        position: absolute; 
+@media (min-width: 768px) and (max-width: 1024px) {
+    #fond {
+        position: absolute;
         z-index: -1;
         width: auto;
         left: -64px;
@@ -97,7 +93,7 @@
         /* visibility: hidden; */
     }
 
-    #tree{
+    #tree {
         /* visibility: hidden; */
         position: absolute;
         z-index: 2;
@@ -105,7 +101,7 @@
         left: 20px;
     }
 
-    #pannel{
+    #pannel {
         position: absolute;
         z-index: 2;
         width: 100px;
@@ -113,25 +109,26 @@
         left: 350px;
     }
 
-    #tas{
+    #tas {
         bottom: 96px;
         left: 354px;
         width: 97px;
         font-size: 14px;
     }
 
-    .timer2{
+    .timer2 {
         margin: 10px;
     }
 
-    #timer3{
-        display:flex;
+    #timer3 {
+        display: flex;
         justify-content: center;
     }
 }
-@media (min-width: 1024px) and (max-width: 1400px){
-    #fond{
-        position: absolute; 
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+    #fond {
+        position: absolute;
         z-index: -1;
         width: 103%;
         left: -3px;
@@ -139,7 +136,7 @@
         /* visibility: hidden; */
     }
 
-    #tree{
+    #tree {
         /* visibility: hidden; */
         position: absolute;
         z-index: 2;
@@ -147,7 +144,7 @@
         left: 50px;
     }
 
-    #pannel{
+    #pannel {
         position: absolute;
         z-index: 2;
         width: 100px;
@@ -155,113 +152,108 @@
         left: 450px;
     }
 
-    #tas{
+    #tas {
         bottom: 96px;
         left: 453px;
         width: 97px;
         font-size: 14px;
     }
 
-    .timer2{
+    .timer2 {
         margin: 10px;
     }
 
-    #timer3{
-        display:flex;
+    #timer3 {
+        display: flex;
         justify-content: center;
     }
 
-    #showTimer{
-        /* padding:10px; */
-        /* transform: scale(0.7); */
+    @media (min-width: 1400px) and (max-width: 1920px) {
+        #fond {
+            position: absolute;
+            z-index: -1;
+            width: 103%;
+            left: -3px;
+            bottom: -2px;
+            /* visibility: hidden; */
+        }
+
+        #tree {
+            /* visibility: hidden; */
+            position: absolute;
+            z-index: 2;
+            bottom: 45px;
+            left: 140px;
+        }
+
+        #pannel {
+            position: absolute;
+            z-index: 2;
+            width: 100px;
+            bottom: 20px;
+            left: 610px;
+        }
+
+        #tas {
+            bottom: 116px;
+            left: 613px;
+            width: 97px;
+            font-size: 14px;
+        }
+
+        .timer2 {
+            margin: 10px;
+        }
+
+        #timer3 {
+            display: flex;
+            justify-content: center;
+        }
+
     }
+
+    @media (min-width: 1920px) {
+        #fond {
+            position: absolute;
+            z-index: -1;
+            width: 103%;
+            left: -3px;
+            bottom: -2px;
+            /* visibility: hidden; */
+        }
+
+        #tree {
+            /* visibility: hidden; */
+            position: absolute;
+            z-index: 2;
+            bottom: 45px;
+            left: 10%;
+            width: auto;
+        }
+
+        #pannel {
+            position: absolute;
+            z-index: 2;
+            width: 7%;
+            bottom: 10px;
+            left: 45%;
+        }
+
+        #tas {
+            bottom: 11%;
+            left: 45.2%;
+            width: 200px;
+            font-size: 20px;
+        }
+
+        .timer2 {
+            margin: 10px;
+        }
+
+        #timer3 {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
 }
-@media (min-width: 1400px) and (max-width: 1920px){
-    #fond{
-        position: absolute; 
-        z-index: -1;
-        width: 103%;
-        left: -3px;
-        bottom: -2px;
-        /* visibility: hidden; */
-    }
-
-    #tree{
-        /* visibility: hidden; */
-        position: absolute;
-        z-index: 2;
-        bottom: 45px;
-        left:140px;
-    }
-
-    #pannel{
-        position: absolute;
-        z-index: 2;
-        width: 100px;
-        bottom: 20px;
-        left: 610px;
-    }
-
-    #tas{
-        bottom: 116px;
-        left: 613px;
-        width: 97px;
-        font-size: 14px;
-    }
-
-    .timer2{
-        margin: 10px;
-    }
-
-    #timer3{
-        display:flex;
-        justify-content: center;
-    }
-
-}
-
-@media (min-width: 1920px){
-    #fond{
-        position: absolute; 
-        z-index: -1;
-        width: 103%;
-        left: -3px;
-        bottom: -2px;
-        /* visibility: hidden; */
-    }
-
-    #tree{
-        /* visibility: hidden; */
-        position: absolute;
-        z-index: 2;
-        bottom: 45px;
-        left: 10%;
-        width: auto;
-    }
-
-    #pannel{
-        position: absolute;
-        z-index: 2;
-        width: 7%;
-        bottom: 10px;
-        left: 45%;
-    }
-
-    #tas{
-        bottom: 11%;
-        left: 45.2%;
-        width: 200px;
-        font-size: 20px;
-    }
-
-    .timer2{
-        margin: 10px;
-    }
-
-    #timer3{
-        display:flex;
-        justify-content: center;
-    }
-}
-
-/* END Media queries */
