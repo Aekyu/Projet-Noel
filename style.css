@@ -14,7 +14,7 @@ body {
   max-height: none !important;
   overflow: hidden !important;
   overflow-x: hidden !important;
-  margin: auto;
+  margin: 0px;
 }
 
 
@@ -30,11 +30,10 @@ body {
   -ms-flex-align: center;
   align-items: center;
   height: 100%;
- background-repeat: no-repeat;
- background-color: #d4418e;
- background-image: linear-gradient(330deg, #d4418e 5%, #043f99 70%);
+  background-repeat: no-repeat;
+  background-color: #d4418e;
+  background-image: linear-gradient(330deg, #d4418e 5%, #043f99 70%);
 }
-
 
 /* SNOW ( Baptiste ) */
 .snowflake {
@@ -156,7 +155,6 @@ body {
   -webkit-animation-delay: 3s, 1.5s;
   animation-delay: 3s, 1.5s;
 }
-/* Demo Purpose Only*/
 .demo {
   font-family: "Raleway", sans-serif;
   color: #fff;
@@ -247,20 +245,10 @@ body {
   z-index: 1;
 }
 
-#fond {
-  position: absolute;
-  left: 0px;
-  bottom: -2px;
-  width: 100%;
-}
-
 #tas {
   color: rgba(250, 0, 0, 0.719);
   text-decoration: none;
   position: absolute;
-  bottom: 149px;
-  right: 51.2%;
-  width: 97px;
   background: transparent;
   z-index: 2;
 }
@@ -278,7 +266,7 @@ body {
 
 /* END CSS page_principale ( tree/pannel/house/button ) */
 
-/* CSS page_tas */
+/* CSS page_tas (Baptiste ) */
 
 #font {
   position: absolute;
@@ -324,6 +312,7 @@ body {
   position: absolute;
   top: 68%;
 }
+
 
 .switch {
   position: absolute;
@@ -385,3 +374,21 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+#btntas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  padding: 10px;
+  background: rgb(120, 12, 12);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 12, 12, 1) 0%,
+    rgba(157, 59, 59, 0.7987570028011204) 0%,
+    rgba(107, 102, 102, 0.6502976190476191) 35%
+  );
+  color: whitesmoke;
+}
+
+/* End CSS page_tas */
