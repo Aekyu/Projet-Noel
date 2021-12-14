@@ -1,3 +1,5 @@
+Le projet entier se trouve dans la branche "page_decompte" NE PAS PRENDRE EN COMPTE LE RESTE
+
 // Lien figma (Maquettes) ci-dessous
 https://www.figma.com/file/51gxvE4ZZq85fGUUlmRbi4/Untitled?node-id=0%3A1
 

@@ -167,93 +167,92 @@
         display: flex;
         justify-content: center;
     }
+}
 
-    @media (min-width: 1400px) and (max-width: 1920px) {
-        #fond {
-            position: absolute;
-            z-index: -1;
-            width: 103%;
-            left: -3px;
-            bottom: -2px;
-            /* visibility: hidden; */
-        }
-
-        #tree {
-            /* visibility: hidden; */
-            position: absolute;
-            z-index: 2;
-            bottom: 45px;
-            left: 140px;
-        }
-
-        #pannel {
-            position: absolute;
-            z-index: 2;
-            width: 100px;
-            bottom: 20px;
-            left: 610px;
-        }
-
-        #tas {
-            bottom: 116px;
-            left: 613px;
-            width: 97px;
-            font-size: 14px;
-        }
-
-        .timer2 {
-            margin: 10px;
-        }
-
-        #timer3 {
-            display: flex;
-            justify-content: center;
-        }
-
+@media (min-width: 1400px) and (max-width: 1920px) {
+    #fond {
+        position: absolute;
+        z-index: -1;
+        width: 103%;
+        left: -3px;
+        bottom: -2px;
+        /* visibility: hidden; */
     }
 
-    @media (min-width: 1920px) {
-        #fond {
-            position: absolute;
-            z-index: -1;
-            width: 103%;
-            left: -3px;
-            bottom: -2px;
-            /* visibility: hidden; */
-        }
-
-        #tree {
-            /* visibility: hidden; */
-            position: absolute;
-            z-index: 2;
-            bottom: 45px;
-            left: 10%;
-            width: auto;
-        }
-
-        #pannel {
-            position: absolute;
-            z-index: 2;
-            width: 7%;
-            bottom: 10px;
-            left: 45%;
-        }
-
-        #tas {
-            bottom: 11%;
-            left: 45.2%;
-            width: 200px;
-            font-size: 20px;
-        }
-
-        .timer2 {
-            margin: 10px;
-        }
-
-        #timer3 {
-            display: flex;
-            justify-content: center;
-        }
+    #tree {
+        /* visibility: hidden; */
+        position: absolute;
+        z-index: 2;
+        bottom: 45px;
+        left: 140px;
     }
 
+    #pannel {
+        position: absolute;
+        z-index: 2;
+        width: 100px;
+        bottom: 20px;
+        left: 610px;
+    }
+
+    #tas {
+        bottom: 116px;
+        left: 613px;
+        width: 97px;
+        font-size: 14px;
+    }
+
+    .timer2 {
+        margin: 10px;
+    }
+
+    #timer3 {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 1920px) {
+    #fond {
+        position: absolute;
+        z-index: -1;
+        width: 103%;
+        left: -3px;
+        bottom: -2px;
+        /* visibility: hidden; */
+    }
+
+    #tree {
+        /* visibility: hidden; */
+        position: absolute;
+        z-index: 2;
+        bottom: 45px;
+        left: 10%;
+        width: auto;
+    }
+
+    #pannel {
+        position: absolute;
+        z-index: 2;
+        width: 7%;
+        bottom: 10px;
+        left: 45%;
+    }
+
+    #tas {
+        bottom: 11%;
+        left: 45.2%;
+        width: 200px;
+        font-size: 20px;
+    }
+
+    .timer2 {
+        margin: 10px;
+    }
+
+    #timer3 {
+        display: flex;
+        justify-content: center;
+    }
 }
