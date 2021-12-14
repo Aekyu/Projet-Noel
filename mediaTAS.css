@@ -3,7 +3,7 @@
 @media screen and (max-width: 860px) {
   #font {
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: auto;
     left: -150px;
     top: 0%;
@@ -41,7 +41,6 @@
     width: 32%;
     margin-top: 1em;
     left: 40px;
-    bottom: 40%;
   }
   #recev {
     text-align: center;
@@ -49,7 +48,6 @@
     width: 32%;
     margin-top: 1em;
     right: 45px;
-    bottom: 40%;
   }
 
   #tas1 {
@@ -60,10 +58,10 @@
 @media (min-width: 860px) and (max-width: 1280px) {
   #font {
     position: absolute;
-    height: 100vh;
-    width: auto;
+    height: 100%;
+    width: 100%;
     top: 0%;
-    right: 0%;
+    left: 0%;
   }
   #donne,
   #recev {
@@ -79,7 +77,7 @@
     width: 25%;
     margin-top: 1em;
     left: 207px;
-    top: 33%;
+    top: 240px;
     padding: 1em;
   }
   #bloc2 {
@@ -88,7 +86,7 @@
     width: 25%;
     margin-top: 1em;
     right: 207px;
-    top: 33%;
+    top: 240px;
     padding: 1em;
   }
 
@@ -98,7 +96,6 @@
     width: 25%;
     margin-top: 1em;
     left: 190px;
-    bottom: 40%;
   }
   #recev {
     text-align: center;
@@ -106,7 +103,6 @@
     width: 25%;
     margin-top: 1em;
     right: 190px;
-    bottom: 40%;
   }
 
   #tas1 {
@@ -118,10 +114,10 @@
 @media (min-width: 1280px) and (max-width: 1500px) {
   #font {
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
-    right: 0;
+    left: 0;
   }
   #donne,
   #recev {
@@ -136,7 +132,7 @@
     width: 21%;
     margin-top: 1em;
     left: 368px;
-    top: 33%;
+    top: 270px;
     padding: 1em;
   }
   #bloc2 {
@@ -145,7 +141,7 @@
     width: 21%;
     margin-top: 1em;
     right: 368px;
-    top: 33%;
+    top: 270px;
     padding: 1em;
   }
 
@@ -155,7 +151,6 @@
     width: 21%;
     margin-top: 1em;
     left: 352px;
-    bottom: 40%;
   }
   #recev {
     text-align: center;
@@ -163,7 +158,6 @@
     width: 21%;
     margin-top: 1em;
     right: 352px;
-    bottom: 40%;
   }
 
   #tas1 {
@@ -171,10 +165,10 @@
     width: 14%;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1500px) and (max-width: 1920px) {
   #font {
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -193,7 +187,7 @@
     width: 16%;
     margin-top: 1em;
     left: 515px;
-    top: 33%;
+    top: 270px;
     padding: 1em;
   }
   #bloc2 {
@@ -202,7 +196,7 @@
     width: 16%;
     margin-top: 1em;
     right: 496px;
-    top: 33%;
+    top: 270px;
     padding: 1em;
   }
 
@@ -212,7 +206,6 @@
     width: 16%;
     margin-top: 1em;
     left: 499px;
-    bottom: 40%;
   }
   #recev {
     text-align: center;
@@ -220,7 +213,6 @@
     width: 16%;
     margin-top: 1em;
     right: 480px;
-    bottom: 40%;
   }
 
   #tas1 {
