@@ -154,7 +154,6 @@ body {
   -webkit-animation-delay: 3s, 1.5s;
   animation-delay: 3s, 1.5s;
 }
-/* Demo Purpose Only*/
 .demo {
   font-family: "Raleway", sans-serif;
   color: #fff;
@@ -178,13 +177,13 @@ body {
   width: 90px;
   text-align: center;
   padding: 8px;
-  margin: 2em;
   font-size: 18px;
 }
 
 #timer {
   position: absolute;
   top: 15%;
+  /* left: 0%; */
 }
 
 /* END COUNTDOWN */
@@ -229,14 +228,6 @@ body {
 
 /* CSS page_principale ( tree/pannel/house/button ) ( Baptiste ) */
 
-#pannel {
-  position: absolute;
-  bottom: 4%;
-  width: 8%;
-  right: 50%;
-  z-index: 1;
-}
-
 #tree {
   position: absolute;
   bottom: 9%;
@@ -245,20 +236,11 @@ body {
   z-index: 1;
 }
 
-#fond {
-  position: absolute;
-  left: 0px;
-  bottom: -2px;
-  width: 100%;
-}
 
 #tas {
   color: rgba(250, 0, 0, 0.719);
   text-decoration: none;
   position: absolute;
-  bottom: 149px;
-  right: 51.2%;
-  width: 97px;
   background: transparent;
   z-index: 2;
 }
@@ -269,6 +251,7 @@ body {
 }
 
 #retourInscription {
+  /* z-index: auto; */
   position: absolute;
   top: 0px;
   left: 0px;
@@ -276,7 +259,7 @@ body {
 
 /* END CSS page_principale ( tree/pannel/house/button ) */
 
-/* CSS page_tas */
+/* CSS page_tas (Baptiste ) */
 
 #font {
   position: absolute;

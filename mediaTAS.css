@@ -1,3 +1,5 @@
+/* Media queries page_tas (Baptiste) */
+
 @media screen and (max-width: 860px) {
   #font {
     position: absolute;
@@ -218,4 +220,6 @@
     right: 43%;
     width: 14%;
   }
-}
+} 
+
+/* End media queries */
