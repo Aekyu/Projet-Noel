@@ -1,6 +1,7 @@
 /* Media queries page_tas (Baptiste) */
 
 @media screen and (max-width: 860px) {
+
   #font {
     position: absolute;
     height: 100%;
@@ -126,7 +127,6 @@
     margin: 1em;
     text-align: center;
   }
-
   #bloc {
     text-align: center;
     position: absolute;
