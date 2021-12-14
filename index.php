@@ -59,7 +59,7 @@ require_once "ressources.php";
           <div class="d-flex justify-content-center pt-2">
             <div class=" w-75">
               <div class="d-flex align-items-end justify-content-end ">
-                <p class="mb-0 mx-2">Déjà inscrit ? <a href="page_principale.php">Cliquez ici</a> </p>
+                <p class="mb-0 mx-2">Déjà inscrit ? <a href="page_principale.html">Cliquez ici</a> </p>
                 <!-- <button class="styleBouton btn btn-secondary" type="submit">Connexion</button> -->
               </div>
             </div>
