@@ -14,10 +14,19 @@ require_once "ressources.php";
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./mediaIndex.css" />
   <title>Page d'accueil</title>
 </head>
 
-<body class="container">
+<body class="container" id="background1">
+<div id="background2" ></div>
+<div id="switchbtn">
+  <label class="switch">
+  <input type="checkbox" onclick="switchBackground()">
+  <span class="slider round"></span>
+</label
+></div>
+
   <div id="timer" class="container">
     <div>
       <h3 class="text-center mt-3 text-light">Temps restant avant l'ouverture</h3>
@@ -132,8 +141,11 @@ require_once "ressources.php";
           "Ouvrez vos cadeaux !!!";
       }
     }, 1000);
-
-    //
+    
+    onclick.switchBackground() {
+      
+    }
+    
   </script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

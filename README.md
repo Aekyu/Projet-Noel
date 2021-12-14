@@ -8,6 +8,7 @@ https://www.figma.com/file/51gxvE4ZZq85fGUUlmRbi4/Untitled?node-id=0%3A1
 - Media queries page inscription (index.php)
 - Changement de theme 
 
+
 //Tâches Baptiste
 - CSS page Connexion
 - CSS page Principale 
@@ -15,3 +16,4 @@ https://www.figma.com/file/51gxvE4ZZq85fGUUlmRbi4/Untitled?node-id=0%3A1
 - Un peu de php pour gérer le système d'inscription ( Aidé de Gaetan )
 - Media queries page tirage au sort (page_tas.html)
 - Media queries page principale (page_principale.html)
+
