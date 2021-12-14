@@ -322,3 +322,21 @@ body {
   position: absolute;
   top: 68%;
 }
+
+#btntas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  padding: 10px;
+  background: rgb(120, 12, 12);
+  background: linear-gradient(
+    90deg,
+    rgba(120, 12, 12, 1) 0%,
+    rgba(157, 59, 59, 0.7987570028011204) 0%,
+    rgba(107, 102, 102, 0.6502976190476191) 35%
+  );
+  color: whitesmoke;
+}
+
+/* End CSS page_tas */
