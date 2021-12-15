@@ -51,10 +51,11 @@
 
         <?php
         if ($_POST) {
+
+require_once "ressources.php";
           $pseudo = $_POST['pseudo'];
 
-          $mysqli = new mysqli('localhost', 'root', '', 'projet_noel');
-
+          $mysqli = new mysqli($servername, $username, $password, $database);
           $query  = "insert into donneur ( nom ) values ( '$pseudo' );";
           if ($mysqli->query($query)) {
             print('<div class="d-flex justify-content-center text-center"><p class="pt-4 w-75"> Merci ' . $pseudo . ' pour ton inscription !
