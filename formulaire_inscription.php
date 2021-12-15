@@ -7,7 +7,7 @@ entete("Inscription");
 if ($_POST) {
     $pseudo = $_POST['pseudo'];
 
-    $mysqli = new mysqli('localhost', 'root', '', 'projet_noel');
+    $mysqli = new mysqli($servername, $username, $password, $database);
 
     $query  = "insert into inscriptions ( nom ) values ( '$pseudo' );";
     //print( $query );
