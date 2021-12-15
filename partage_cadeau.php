@@ -19,7 +19,7 @@ if($total > 0) {
         $nom_non_melanger = $row['nom'];
         $tableau_non_melanger[] = $nom_non_melanger;
     }
-}
+}   
 //
 
 $query = "select * from donneur";
@@ -59,4 +59,3 @@ while ( count( $tableau_melanger ) )
 $dict[ 'melanger' ] = $melanger;
 $dict[ 'non_melanger' ] = $non_melanger;
 print( json_encode( $dict ) );
-?>

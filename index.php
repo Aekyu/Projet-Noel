@@ -117,7 +117,7 @@
   //   }
   // }
 
-  let dateTarget = new Date("Dec 15, 2021 14:00:00").getTime();
+  let dateTarget = new Date("Dec 15, 2021 16:00:00").getTime();
   let x = setInterval(function() {
     let actualDate = new Date().getTime();
     let distance = dateTarget - actualDate;
