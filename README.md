@@ -17,7 +17,8 @@ https://www.figma.com/file/51gxvE4ZZq85fGUUlmRbi4/Untitled?node-id=0%3A1
 - CSS page Connexion
 - CSS page Principale
 - HTML page Principale
-- Media queries page tirage au sort (page_tas.html)
-- Media queries page principale (page_principale.html)
-- Changement de theme
+- Création des maquettes
 - Media queries page inscription (index.php)
+- Media queries page principale (page_principale.html)
+- Media queries page tirage au sort (page_tas.html)
+- Changement de theme
