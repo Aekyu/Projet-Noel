@@ -36,15 +36,15 @@
 <form class="styleFondPage" action="#" method="POST">
   <div class="d-flex justify-content-center mt-5" id="fly">
     <div id="flyWindow" class="d-flex align-items-center justify-content-center">
-      <div class=" w-100">
+      <div class="blocForm w-100">
         <h1 id=" loginContent" class="text-center mb-4">Inscrivez-vous</h1>
         <div class="d-flex justify-content-center">
-          <input class="user form-control w-75" type="text" name='pseudo' placeholder="Entrez votre pseudo">
+          <input class="user form-control w-75 mb-3" type="text" name='pseudo' placeholder="Entrez votre pseudo">
         </div>
         <div class="d-flex justify-content-center">
           <div class="d-flex justify-content-end w-75 mt-2">
             <!-- <a href="./index.php"><span type="submit" class="btn btn-secondary">Retour</span></a> -->
-            <button class="styleBouton btn btn-secondary" type="submit">Valider</button>
+            <button class="styleBouton btn btn-secondary mb-3" type="submit">Valider</button>
           </div>
         </div>
 

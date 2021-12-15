@@ -10,7 +10,7 @@ https://www.figma.com/file/51gxvE4ZZq85fGUUlmRbi4/Untitled?node-id=0%3A1
 - Création du timer
 - Création du formulaire
 - HTML page Connexion
-- Media queries page inscription (index.php)
+
 
 //Tâches Baptiste
 
@@ -21,3 +21,4 @@ https://www.figma.com/file/51gxvE4ZZq85fGUUlmRbi4/Untitled?node-id=0%3A1
 - Media queries page tirage au sort (page_tas.html)
 - Media queries page principale (page_principale.html)
 - Changement de theme
+- Media queries page inscription (index.php)
