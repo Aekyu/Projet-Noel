@@ -14,8 +14,7 @@ https://www.figma.com/file/51gxvE4ZZq85fGUUlmRbi4/Untitled?node-id=0%3A1
 
 //Tâches Baptiste
 
-- CSS page Connexion
-- CSS page Principale
+- CSS page Connexion/Principale/Tirage au sort
 - HTML page Principale
 - Création des maquettes
 - Media queries page inscription (index.php)
