@@ -231,10 +231,6 @@ body.theme1 {
 /* FORM ( YACINE ) */
 
 #flyWindow {
-  position: absolute;
-  bottom: 5em;
-  width: 550px;
-  height: 325px;
   background-color: lightgrey;
   border-radius: 3px;
   box-shadow: 10px 5px 5px rgb(92, 92, 92);
@@ -243,6 +239,10 @@ body.theme1 {
 #loginContent {
   text-align: center;
 }
+
+/* .blocForm {
+  padding-top: 15px
+} */
 
 #Name {
   margin-top: 50px;
@@ -420,11 +420,7 @@ input:checked+.slider:before {
   left: 0;
   margin: 10px;
   padding: 10px;
-  background: rgb(120, 12, 12);
-  background: linear-gradient(90deg,
-      rgba(120, 12, 12, 1) 0%,
-      rgba(157, 59, 59, 0.7987570028011204) 0%,
-      rgba(107, 102, 102, 0.6502976190476191) 35%);
+  background-color: #1f020aa9;
   color: whitesmoke;
 }
 

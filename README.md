@@ -10,14 +10,14 @@ https://www.figma.com/file/51gxvE4ZZq85fGUUlmRbi4/Untitled?node-id=0%3A1
 - Création du timer
 - Création du formulaire
 - HTML page Connexion
-- Media queries page inscription (index.php)
+
 
 //Tâches Baptiste
 
-- CSS page Connexion
-- CSS page Principale
+- CSS page Connexion/Principale/Tirage au sort
 - HTML page Principale
-- Un peu de php pour gérer le système d'inscription ( Aidé de Gaetan )
-- Media queries page tirage au sort (page_tas.html)
+- Création des maquettes
+- Media queries page inscription (index.php)
 - Media queries page principale (page_principale.html)
+- Media queries page tirage au sort (page_tas.html)
 - Changement de theme
