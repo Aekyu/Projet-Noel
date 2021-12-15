@@ -41,7 +41,8 @@ while ($tableau_non_melanger[0] === $tableau_melanger[0]) {
 }
 
 //$c = array_combine($tableau_non_melanger, $tableau_melanger);
-
+$melanger = [];
+$non_melanger = [];
 while ( count( $tableau_melanger ) )
 {
 
@@ -49,7 +50,13 @@ while ( count( $tableau_melanger ) )
     {
         shuffle($tableau_melanger);
     }
-    print("$tableau_melanger[0] donne a $tableau_non_melanger[0]<br>");
+    $melanger[] = $tableau_melanger[0];
+    $non_melanger[] = $tableau_non_melanger[0];
+    //print("$tableau_melanger[0] donne a $tableau_non_melanger[0]<br>");
     array_shift($tableau_non_melanger);
     array_shift($tableau_melanger);
 }
+$dict[ 'melanger' ] = $melanger;
+$dict[ 'non_melanger' ] = $non_melanger;
+print( json_encode( $dict ) );
+?>
