@@ -17,3 +17,9 @@ if($total > 0) {
 }
 //
 print(json_encode($tableau_non_melanger));
+    while($row = mysqli_fetch_assoc($result)){
+        $nom_non_melanger = $row;
+        $tableau_non_melanger[] = $nom_non_melanger;
+    }
+echo json_encode($tableau_non_melanger);
+?>

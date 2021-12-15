@@ -1,0 +1,76 @@
+body
+{
+    background-image: url(./images/wepik-2021118-113829.png);
+}
+
+
+.styleFondPage
+{
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 37px;
+
+position: relative;
+width: 359px;
+height: 493px;
+
+
+
+}
+
+.responsive
+{
+    width: 100%;
+    height: auto;
+}
+
+.user
+{
+position: static;
+width: 285px;
+height: 47px;
+left: 37px;
+top: 333px;
+
+background: rgba(52, 121, 2, 0.6);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 29px 0px;
+}
+
+.motDePasse
+{
+position: static;
+width: 285px;
+height: 47px;
+left: 37px;
+top: 409px;
+
+background: rgba(52, 121, 2, 0.6);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+margin: 29px 0px;
+}
+
+.styleBouton
+{
+
+}
+
+p
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}

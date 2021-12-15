@@ -1,0 +1,32 @@
+@media screen and (max-width: 480px) {
+#flyWindow {
+width: 90% !important;
+height: 33% !important;
+}}
+
+@media screen and (max-width: 620px) {
+  .timer2{
+    width: 35%;
+    height: 50%;
+    margin: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+}
+@media screen and (max-width: 859px) {
+#flyWindow {
+  height: 40%;
+  width: 60%;
+}
+#loginContent {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.timer2{
+  display: flex;
+  justify-content: space-around;
+width: 50%;
+height: 50%;
+font-size: small;
+}
+}
