@@ -31,7 +31,7 @@
         <div id="recev"></div>
       </div>
       <div>
-        <button id="tas1" onclick="tiragePersonnes(array_name)">
+        <button id="tas1" onclick="tiragePersonnes()">
           Tirer au sort
         </button>
       </div>
@@ -42,133 +42,71 @@
     </div>
 
     <script>
+      var tableau_non_melanger = [];
+      var tableau_melanger = [];
+      function chercherDataBackB1()
+    {
+        // new creation d'un objet XMLHttpRequest 
+        const xhttp = new XMLHttpRequest();
+        
+        // je defini la fonction qui sera utilisé une fois les données chargées
+        xhttp.onload = function() 
+        {
+            console.log(this.responseText );
+            let dict =  JSON.parse(  this.responseText );
+            tableau_non_melanger = dict[ 'non_melanger' ];
+            tableau_melanger = dict[ 'melanger' ];
+        }
+
+        // je prépare l'appel de l'URL
+        xhttp.open("GET", "partage_cadeau.php");
+        // j'envoie l'url
+        xhttp.send();
+    }
       let donne = document.querySelector("#donne");
       let recev = document.querySelector("#recev");
-      let array_nameReceveur = [];
-      let Utilisateurs = [
-        {
-          id: "1",
-          name: "Bouchra",
-        },
-        {
-          id: "2",
-          name: "Alexis",
-        },
-        {
-          id: "3",
-          name: "Hanane",
-        },
-        {
-          id: "4",
-          name: "Mehdi",
-        },
-        {
-          id: "5",
-          name: "Olivier",
-        },
-        {
-          id: "7",
-          name: "Remi",
-        },
-        {
-          id: "8",
-          name: "Karim",
-        },
-        {
-          id: "9",
-          name: "Nelly",
-        },
-        {
-          id: "10",
-          name: "Xavier",
-        },
-        {
-          id: "11",
-          name: "Benoit",
-        },
-        {
-          id: "12",
-          name: "Samuel",
-        },
-        {
-          id: "13",
-          name: "Baptiste",
-        },
-        {
-          id: "14",
-          name: "Yacine",
-        },
-        {
-          id: "15",
-          name: "Messaoud",
-        },
-        {
-          id: "16",
-          name: "Ahmed",
-        },
-        {
-          id: "17",
-          name: "Gaetan",
-        },
-        {
-          id: "18",
-          name: "Simon",
-        },
-      ];
+      
 
-      let array_name = [];
 
-      function DefArray() {
-        Utilisateurs.forEach((v) => {
-          array_name.push(v.name);
-          array_nameReceveur.push(v.name);
-        });
-      }
-
-      function tiragePersonnes(ArrayName) {
+      function tiragePersonnes() {
         let terminer = false;
-        let number = randomNumber(ArrayName.length);
-        let number2 = randomNumber(ArrayName.length);
         let donneur;
         let receveur;
-        donneur = ArrayName[number];
-        receveur = array_nameReceveur[number2];
+        donneur = tableau_non_melanger[0];
+        receveur = tableau_melanger[0];
 
-        if (ArrayName.length === 0) {
+        if (tableau_non_melanger.length === 0) {
           donneur = "";
           receveur = "";
           terminer = true;
         }
-        console.log(ArrayName, array_nameReceveur);
-        console.log(donneur, receveur);
+        console.log(tableau_non_melanger);  
         if (terminer === false) {
           if (donneur === receveur) {
             // console.log("if passé");
             while (donneur === receveur) {
               //   console.log("while passé", donneur, receveur);
-              number2 = randomNumber(ArrayName.length);
-              receveur = array_nameReceveur[number2];
+              receveur = tableau_melanger[0];
               //   console.log("while passé", donneur, receveur);
             }
           }
 
-          array_nameReceveur.splice(number2, 1);
-          ArrayName.splice(number, 1);
-
+          tableau_melanger.splice(0,1);
+          tableau_non_melanger.splice(0,1);
+          console.log(donneur);
+          console.log(receveur);
+          
           donne.innerHTML = donneur;
           recev.innerHTML = receveur;
         }
       }
 
-      function randomNumber(max) {
-        return Math.floor(Math.random() * max);
-      }
+      
 
-      DefArray();
+      chercherDataBackB1();
 
-      tiragePersonnes(array_name);
+      tiragePersonnes();
 
-      console.log(array_nameReceveur, array_name);
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
